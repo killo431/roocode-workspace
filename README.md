@@ -1,9 +1,24 @@
 # roocode-workspace
+
 The roocode-workspace repository is a powerful and flexible workspace template designed specifically for developers using Roo Code. It provides an optimized environment to streamline project development through SPARC orchestration and AI-assisted workflows in Visual Studio Code (VS Code).
 
 This repository introduces enhanced modes that make it easier to develop, manage, and maintain your projects efficiently. By leveraging persistent project context and fine-tuned mode interactions, it minimizes token consumption while maximizing productivity.
 
 **In short, this repository combines RooFlow's memory bank + RooFlow's boomerang mode + SPARC Orchestration modes (including memory bank).**
+
+---
+
+## 🚀 Quick Start
+
+**New to the Golden Template?** Get started in minutes with our interactive wizard!
+
+```bash
+./init-template.sh
+```
+
+This will guide you through project setup and initialize your Memory Bank with your specific information.
+
+📖 **[Read the Complete Quick Start Guide](QUICKSTART.md)** for detailed instructions and best practices.
 
 ---
 
@@ -42,7 +57,17 @@ This repository introduces enhanced modes that make it easier to develop, manage
    In RooCode, navigate to the bottom-left corner and select your desired mode. For first-time use, choose *Architect Mode*.
 
 6. **Initialize Memory Bank**  
-   If this is your first time setting up the project, start by entering the command `initialize memory bank` in RooCode chat. This will automatically create a folder named `memory_bank` in your repository and generate necessary files within it.
+   You have two options:
+   
+   **Option A: Interactive Wizard (Recommended)**  
+   Run the initialization script in your terminal:
+   ```bash
+   ./init-template.sh
+   ```
+   This wizard will ask you questions about your project and automatically populate all Memory Bank files with your answers.
+   
+   **Option B: Manual Initialization**  
+   In RooCode chat, enter the command `initialize memory bank`. This will create a folder named `memory_bank` in your repository with template files that you'll need to fill in manually.
 
 7. **Continue Development**  
    Proceed with your project development as desired while using the implemented modes. The memory bank will automatically update to reflect changes in your project.
