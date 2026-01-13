@@ -36,13 +36,11 @@ Use this template for every new automation hook:
       "field1": {
         "type": "string",
         "description": "Description of field1",
-        "required": true,
         "example": "example_value"
       },
       "field2": {
         "type": "integer",
         "description": "Description of field2",
-        "required": false,
         "example": 123
       }
     },
@@ -106,33 +104,28 @@ Use this template for every new automation hook:
       "filePath": {
         "type": "string",
         "description": "Path to the updated file relative to memory-bank/",
-        "required": true,
         "example": "systemPatterns.md"
       },
       "changeType": {
         "type": "string",
         "enum": ["created", "updated", "deleted"],
         "description": "Type of change that occurred",
-        "required": true,
         "example": "updated"
       },
       "timestamp": {
         "type": "string",
         "format": "date-time",
         "description": "When the change occurred (ISO 8601 format)",
-        "required": true,
         "example": "2024-01-15T14:30:00Z"
       },
       "userId": {
         "type": "string",
         "description": "ID of the user who made the change",
-        "required": false,
         "example": "user_123"
       },
       "changeDescription": {
         "type": "string",
         "description": "Brief description of what changed",
-        "required": false,
         "example": "Added new authentication pattern"
       }
     },
@@ -202,19 +195,16 @@ Use this template for every new automation hook:
         "type": "string",
         "enum": ["development", "staging", "production"],
         "description": "Target deployment environment",
-        "required": true,
         "example": "production"
       },
       "version": {
         "type": "string",
         "description": "Semantic version number",
-        "required": true,
         "example": "1.2.3"
       },
       "deploymentId": {
         "type": "string",
         "description": "Unique identifier for this deployment",
-        "required": true,
         "example": "deploy_abc123"
       },
       "services": {
@@ -223,7 +213,6 @@ Use this template for every new automation hook:
           "type": "string"
         },
         "description": "List of services included in this deployment",
-        "required": true,
         "example": ["api-gateway", "auth-service", "user-service"]
       }
     },
