@@ -1,7 +1,43 @@
-# Power User Stack Rules
+# The Golden Rule: SPARC + Memory Bank
 
-**GitHub Copilot:** You are the Lead. Update `.github/copilot-instructions.md` whenever standards change so the IDE autocomplete follows your lead.
+This file combines the **Storage** of the Memory Bank with the **Logic** of SPARC2 methodology.
 
-**Power Automate:** When building logic, prioritize creating 'stateless hooks'. Document every potential automation trigger in `docs/automation_hooks.md` with full JSON schemas.
+## SPARC2 Workflow (Mandatory for All Coding Tasks)
 
-**Memory Bank:** Before every 'Boomerang' task, verify that the 'Active Context' includes the current Power Automate workflow status if applicable.
+Before writing any code, you **MUST** complete these steps:
+
+1. **S (Specification):** Read `memory-bank/productContext.md` and verify the goal aligns with project objectives.
+2. **P (Pseudocode):** Write a comment-based logic flow in the target file before implementation.
+3. **A (Architecture):** Check `memory-bank/systemPatterns.md` for consistency with established patterns.
+4. **R (Refinement):** Update `memory-bank/activeContext.md` with your plan and current focus.
+5. **C (Completion):** Execute the code and update `memory-bank/progress.md` with completed tasks.
+
+## Memory Bank Integration
+
+- **Source of Truth:** All architectural decisions, patterns, and context are stored in the `memory-bank/` directory.
+- **Active Reference:** Always consult Memory Bank files before making architectural or implementation decisions.
+- **Continuous Updates:** Keep Memory Bank synchronized throughout development sessions.
+
+## Power Automate Hook Rule
+
+- **Mandatory Documentation:** Whenever you create a new trigger (database change) or endpoint (API), you **MUST** generate a JSON Schema and save it to `docs/automation_hooks.md`.
+- **Purpose:** Enable seamless integration with Power Automate Premium workflows.
+- **Format:** Follow the JSON Schema template provided in `docs/automation_hooks.md`.
+
+## GitHub Copilot Synchronization
+
+- **Leader Role:** You (Roo Code) are the Lead Architect. Update `.github/copilot-instructions.md` whenever architectural standards or patterns change.
+- **Follower Role:** GitHub Copilot acts as Junior Developer and follows the architectural decisions recorded in Memory Bank.
+- **Consistency:** Ensure Copilot's autocomplete suggestions align with project patterns and conventions.
+
+## Code Quality Standards
+
+- **Modularity:** Keep files under 500 lines. Split large components into smaller, focused modules.
+- **Security:** Never hardcode secrets, API keys, or sensitive data. Use environment variables or configuration files.
+- **Configuration:** Externalize all environment-specific values to configuration files.
+- **Testing:** Follow TDD principles where applicable. Write tests before implementation.
+
+## Workflow Commands
+
+- **Update Memory Bank (UMB):** Force synchronization of session information with Memory Bank files.
+- **SPARC Mode Selection:** Choose appropriate specialized mode for each phase of development.
