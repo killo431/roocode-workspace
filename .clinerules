@@ -27,7 +27,8 @@
 - Externalize all configuration
 
 ### Code Quality
-- Follow SPARC methodology for complex features
+- Follow SPARC methodology (Specification, Pseudocode, Architecture, Refinement, Completion) for complex features
+  - See README.md and .roomodes for detailed mode descriptions
 - Maintain comprehensive test coverage
 - Document architectural decisions in the Memory Bank
 

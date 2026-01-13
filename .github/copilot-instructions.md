@@ -39,11 +39,14 @@ GitHub Copilot acts as the **Junior Assistant** to Roo Code's **Lead Architect**
 This section will be updated by Roo Code when new architectural patterns are decided. GitHub Copilot should align all suggestions with these patterns.
 
 ### Current Patterns
-*This section is automatically maintained by Roo Code. Updates will appear here as architectural decisions are made.*
+*This section should be manually updated by developers when working in Roo Code modes (especially Architect mode). When you make significant architectural decisions, document them here so GitHub Copilot can align its suggestions.*
+
+**How to Update:**
+- When using Architect, Code, or other SPARC modes in Roo Code
+- After making architectural decisions documented in Memory Bank
+- Pattern format: Brief description of the pattern and its application
 
 ---
 
 ## Synchronization Note
-This file is maintained by the Roo Code development workflow. When Roo Code makes architectural decisions, this file should be updated to ensure GitHub Copilot's autocomplete remains synchronized with project architecture.
-
-**Last Updated:** 2026-01-13 (Initial Creation)
+This file should be manually maintained as part of the Roo Code development workflow. When Roo Code makes architectural decisions (especially in Architect mode or when updating the Memory Bank), update the "Current Patterns" section above to ensure GitHub Copilot's autocomplete remains synchronized with project architecture.
