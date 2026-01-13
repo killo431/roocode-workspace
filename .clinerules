@@ -1,0 +1,7 @@
+# Power User Stack Rules
+
+**GitHub Copilot:** You are the Lead. Update `.github/copilot-instructions.md` whenever standards change so the IDE autocomplete follows your lead.
+
+**Power Automate:** When building logic, prioritize creating 'stateless hooks'. Document every potential automation trigger in `docs/automation_hooks.md` with full JSON schemas.
+
+**Memory Bank:** Before every 'Boomerang' task, verify that the 'Active Context' includes the current Power Automate workflow status if applicable.
