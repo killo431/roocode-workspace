@@ -1,45 +1,7 @@
-# Roo Code Workspace Rules
+# Power User Stack Rules
 
-## Copilot Co-existence Layer
+**GitHub Copilot:** You are the Lead. Update `.github/copilot-instructions.md` whenever standards change so the IDE autocomplete follows your lead.
 
-> **Always maintain the .github/copilot-instructions.md file.**
-> 
-> Ensure that whenever you decide on a new architectural pattern, you update this file so GitHub Copilot's autocomplete stays in sync with your decisions.
-> 
-> This maintains harmony between Roo Code (Lead Architect) and GitHub Copilot (Junior Assistant), preventing conflicting code style or logic suggestions.
+**Power Automate:** When building logic, prioritize creating 'stateless hooks'. Document every potential automation trigger in `docs/automation_hooks.md` with full JSON schemas.
 
-### Implementation Guidelines:
-1. **When making architectural decisions**, update `.github/copilot-instructions.md` in the "Current Patterns" section
-2. **Document the pattern clearly** so GitHub Copilot can understand and respect it
-3. **Include rationale** for the pattern when it's not obvious
-4. **Keep it current** - outdated instructions lead to conflicting suggestions
-
-## Core Development Principles
-
-### Modularity
-- Keep all files under 500 lines
-- Break large components into smaller, focused modules
-- Maintain clear separation of concerns
-
-### Security & Configuration
-- Never hard-code secrets, API keys, or environment-specific values
-- Always use environment variables or configuration files
-- Externalize all configuration
-
-### Code Quality
-- Follow SPARC methodology (Specification, Pseudocode, Architecture, Refinement, Completion) for complex features
-  - See README.md and .roomodes for detailed mode descriptions
-- Maintain comprehensive test coverage
-- Document architectural decisions in the Memory Bank
-
-### Memory Bank Integration
-- Update Memory Bank files when significant changes occur
-- Use `UMB` (Update Memory Bank) command to force synchronization
-- Ensure continuity across development sessions
-
-## Mode-Specific Guidelines
-
-When using specialized modes (Architect, Code, Debug, etc.), ensure that:
-- Architectural patterns are documented and communicated
-- GitHub Copilot instructions are kept synchronized
-- All modes respect the established patterns and conventions
+**Memory Bank:** Before every 'Boomerang' task, verify that the 'Active Context' includes the current Power Automate workflow status if applicable.
